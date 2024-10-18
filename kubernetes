@@ -1,0 +1,18 @@
+https://drive.google.com/file/d/1CMwDH0mpDD-9zwOqMuYEXeqQicxsYqZG/view?usp=classroom_web&authuser=0
+https://drive.google.com/file/d/1FgdIkKZEWpw7tzdcVoCpi0LRh7gqYLWL/view?usp=classroom_web&authuser=0
+https://drive.google.com/file/d/1zS7fKZZn1qbrDFz7WlKr-E0uUSEclqff/view?usp=classroom_web&authuser=0
+https://drive.google.com/file/d/1Vy_882O-UHlYE0oj5JHdumTBvv-Dp0ib/view?usp=classroom_web&authuser=0
+  Windows powershell
+kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/v2.6.1/aio/deploy/recommended.yaml
+cd C:\Users\
+kubectl apply -f dashboard-adminuser.yaml
+kubectl -n kubernetes-dashboard create token admin-user
+kubectl proxy
+http://localhost:8001/api/v1/namespaces/kubernetes-dashboard/services/https:kubernetes-dashboard:/proxy/#/login
+kubectl create -f myDeployment.yml
+kubectl get deployment
+kubectl get replicaset
+kubectl get pod
+kubectl create -f myService.yml
+kubectl get service nginx
+kubectl proxy
